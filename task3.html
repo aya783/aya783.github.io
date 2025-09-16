@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grades & Feedback Form</title>
+  <!-- Подключение CSS -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Table Section -->
+  <h1 id="page-title">Student Grades</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Subject</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>Ayan</td>
+      <td>Math</td>
+      <td>A</td>
+    </tr>
+    <tr class="highlight-row">
+      <td>Alina</td>
+      <td>Physics</td>
+      <td>B+</td>
+    </tr>
+    <tr>
+      <td>Nurbol</td>
+      <td>Chemistry</td>
+      <td>A-</td>
+    </tr>
+    <tr>
+      <td>Samal</td>
+      <td>Biology</td>
+      <td>B</td>
+    </tr>
+  </table>
+
+  <!-- Form Section -->
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Do you like this page?</label>
+      <div class="radio-group">
+        <input type="radio" id="yes" name="like" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="like" value="no">
+        <label for="no">No</label>
+      </div>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+  <footer>
+<p>© 2025 My Website</p>
+</footer>
+</body>
+</html>

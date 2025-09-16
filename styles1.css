@@ -1,0 +1,82 @@
+/* Header Tribute */
+.tribute-header {
+  background-color: #6667AB; /* темный синий */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Merriweather', serif;
+}
+
+/* Контент Tribute */
+.tribute-content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Фото */
+.tribute-img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Заголовки */
+.tribute-content h2 {
+  margin-top: 20px;
+  color: #222;
+
+}
+
+/* Параграф */
+.tribute-content p {
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Списки */
+.tribute-content ol,
+.tribute-content ul {
+  text-align: left;
+  margin: 15px auto;
+  display: inline-block;
+}
+
+.tribute-content ul {
+  list-style-type: square;
+}
+
+/* Кнопка */
+.btn {
+  display: inline-block;
+  background-color: #6667AB;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #ccccff;
+}
+
+/* Footer (такой же как в Task1) */
+#footer {
+  clear: both;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
