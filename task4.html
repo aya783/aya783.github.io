@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+
+    header {
+      background: #000080;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+    .main-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px;
+    }
+
+    .project-card p {
+      flex-grow: 1;
+    }
+
+    .project-card button {
+      padding: 10px;
+      background: #2196F3;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .project-card button:hover{
+      background-color: #C9F4FF;
+      color: gray;
+    }
+
+
+    .sidebar {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    footer {
+      background: #000080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <a href="index.html">Task 1,2,3</a>
+      <a href="task4.html">Task 4</a>
+    </nav>
+  </header>
+
+
+  <div class="main-layout">
+    <!-- Projects -->
+    <section class="projects">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Short description of the first project.</p>
+        <button>View More</button>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Short description of the second project.</p>
+        <button>View More</button>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Short description of the third project.</p>
+        <button>View More</button>
+      </div>
+    </section>
+
+
+    <aside class="sidebar">
+      <h3>About Me</h3>
+      <p>Hi! I am Ayagul, and i am making website for my assignment, for those pages i used CSS flexbox and grid.</p>
+    </aside>
+  </div>
+
+
+  <footer>
+    &copy; 2025 My Portfolio
+  </footer>
+</body>
+</html>

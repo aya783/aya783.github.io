@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Example</title>
+<style>
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #000080;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 10px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .card button {
+      padding: 10px 15px;
+      background: #56C8E8;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card button:hover{
+      background-color: #C9F4FF;
+      color: gray;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+
+    .grid-layout {
+      display: grid;
+      grid-template-rows: 80px 0.5fr 60px;
+      grid-template-columns: 200px 1fr;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background: #000080;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background: #f4f4f4;
+      padding: 15px;
+    }
+
+    main {
+      grid-area: main;
+      background: #fff;
+      padding: 15px;
+    }
+
+    footer {
+      grid-area: footer;
+      background: #000080;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+</style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MyLogo</div>
+    <nav class="nav-links">
+      <a href="index.html">Task 1,2,3</a>
+      <a href="task4.html">Task 4</a>
+
+    </nav>
+  </header>
+
+
+  <section class="card-container">
+    <div class="card">
+      <img src="cat1.jpg" alt="Card 1">
+      <h3>Kittie N1</h3>
+      <p>Cute.</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <img src="cat2.jpg" alt="Card 2">
+      <h3>Kittie N2</h3>
+      <p>Adorable.</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <img src="cat3.jpg" alt="Card 3">
+      <h3>Kittie N3</h3>
+      <p>Sweet.</p>
+      <button>Read More</button>
+    </div>
+  </section>
+
+  <div class="grid-layout">
+      <header>Header</header>
+      <aside>Sidebar</aside>
+      <main>Main Content</main>
+      <footer>Footer</footer>
+    </div>
+
+    <div class="gallery">
+    <div class="gallery-item">
+      <img src="img1.jpg" alt="Image 1">
+      <div class="caption">Image 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img2.jpg" alt="Image 2">
+      <div class="caption">Image 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img3.jpg" alt="Image 3">
+      <div class="caption">Image 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img4.jpg" alt="Image 4">
+      <div class="caption">Image 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img5.jpg" alt="Image 5">
+      <div class="caption">Image 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img6.jpg" alt="Image 6">
+      <div class="caption">Image 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img7.jpg" alt="Image 7">
+      <div class="caption">Image 7</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img8.jpg" alt="Image 8">
+      <div class="caption">Image 8</div>
+    </div>
+    <div class="gallery-item">
+      <img src="img9.jpg" alt="Image 9">
+      <div class="caption">Image 9</div>
+    </div>
+  </div>
+</body>
+</html>
